@@ -1,0 +1,5 @@
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Maps\bin\Debug\Corcentric.Integrations.Process.Maps.dll
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Maps\bin\Debug\Corcentric.Integrations.Process.Maps.pdb
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Maps\bin\Debug\BizTalk Server Project1.dll
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Maps\obj\Debug\Corcentric.Integrations.Process.Maps.dll
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Maps\obj\Debug\Corcentric.Integrations.Process.Maps.pdb
