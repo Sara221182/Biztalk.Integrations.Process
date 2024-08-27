@@ -1,0 +1,4 @@
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\BizTalk Server Project1\bin\Debug\BizTalk Server Project1.dll
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\BizTalk Server Project1\bin\Debug\BizTalk Server Project1.pdb
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\BizTalk Server Project1\obj\Debug\BizTalk Server Project1.dll
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\BizTalk Server Project1\obj\Debug\BizTalk Server Project1.pdb
