@@ -75,13 +75,13 @@
     </Map>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BizTalk Server Project1\Biztalk.Integrations.Process.Schemas.btproj">
+    <None Include="demo.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Corcentric.Integrations.Process.Schemas\Biztalk.Integrations.Process.Schemas.btproj">
       <Project>{bcf06f57-3245-4a2f-90b2-24e0cc461d41}</Project>
       <Name>Biztalk.Integrations.Process.Schemas</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="demo.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
