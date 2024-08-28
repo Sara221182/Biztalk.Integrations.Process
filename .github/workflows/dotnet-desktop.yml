@@ -58,3 +58,6 @@ jobs:
     - name: Run a one-line script
       run: powershell C:\Temp\BizTalkDeploy.ps1
 
+    - name: Run a one-line script
+      run: powershell C:\Temp\BizTalkDeploy.ps1
+
