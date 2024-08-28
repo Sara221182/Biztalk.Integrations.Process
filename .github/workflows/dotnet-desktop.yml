@@ -18,7 +18,6 @@ jobs:
       Wap_Project_Path: Biztalk.Integrations.Process.sln  
       Dir_Path: C:\
       
-
     steps:
     - uses: actions/checkout@master
       
