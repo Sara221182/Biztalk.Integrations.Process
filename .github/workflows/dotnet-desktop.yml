@@ -33,8 +33,6 @@ jobs:
 
     - name: Create the app package
       run: msbuild $env:Wap_Project_Path /p:Configuration=Release /p:OutDir=C:\ShashankWork\CICDDemo
-
-
  
     - name: Run a one-line script
       run: powershell C:\ShashankWork\CICDDemo\PowerShell\BizTalkDeploy.ps1
