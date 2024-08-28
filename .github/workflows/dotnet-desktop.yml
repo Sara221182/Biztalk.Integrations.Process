@@ -16,8 +16,7 @@ jobs:
 
     env:
       
-      Wap_Project_Path: Corcentric.Integrations.Process.Schemas                      # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
- 
+      Wap_Project_Path: Corcentric.Integrations.Process.Schemas                      
 
     steps:
     - uses: actions/checkout@master
@@ -26,6 +25,9 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v2
 
     - name: Create the app package
       run: msbuild $env:Wap_Project_Path /p:Configuration=Release /p:UapAppxPackageBuildMode=C:\ShashankWork\CICDDemo\Pakage /p:OutDir=C:\ShashankWork\CICDDemo
