@@ -13,45 +13,18 @@ jobs:
 
     runs-on: self-hosted  # For a list of available runner types, refer to
                              # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
-    env:
-      Solution_Name: Biztalk.Integrations.Process.sln                                                                        # Replace with your solution name, i.e. MyWpfApp.sln.
-      
-      Project_Path_Schema: Corcentric.Integrations.Process.Maps                                                              # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Project_Path_Maps: Corcentric.Integrations.Process.Maps                                                                # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.   
-      
-      Wap_Project_Directory: Biztalk.Integrations.Process                                                                    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-      
-      Wap_Project_Path_Schema: Corcentric.Integrations.Process/Corcentric.Integrations.Schemas.btproj                        # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
-      Wap_Project_Path_Maps: Corcentric.Integrations.Process/Corcentric.Integrations.Process.Map.btproj                      # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
-      
-      application: Biztalk.Integrations.Process.Maps.btproj
-     
-      
-      ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
-      
+    
+
     steps:
+    - uses: actions/checkout@master
+
+    - name: Setup VSWhere.exe
+      uses: warrenbuckley/Setup-VSWhere@v1
+
+    - name: VSWhere MSBuild
+      run: vswhere -latest -requires Microsoft.Component.MSBuild -find MSBuild\**\Bin\MSBuild.exe
+      
     - name: Checkout
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-
-    # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
-    - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v2
-      
- 
-     # Create the app package by building and packaging the Windows Application Packaging project
-    - name: Create the app package
-      #run: Build-BizTalkMsi -Application $application -Project $projectName
-      #run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle 
-      run: msbuild $env:Wap_Project_Path_Schema /p:Configuration=Release /p:UapAppxPackageBuildMode=C:\ShashankWork\CICDDemo\Pakage /p:OutDir=C:\ShashankWork\CICDDemo
-
-
-
-    # - name: Build Powershell   
-    #  run: ./Deployment/CreateMSI_UAT.ps1 -RunAsAdmin
-    
-    #- name: Copy MSI   
-    #  run:  Copy-Item ("C:\actions-runner\DemoDICDPipleineForVS\DemoDICDPipleineForVS\Deployment\DemoProjectForGitHubCICDPipeline-1.0.0.msi") "C:\Users\sbhosekar\Documents\Visual Studio 2012\Projects\DemoProjectForGitHubCICDPipeline\DemoDICDPipleineForVS\MSI1" -Force
-      
-    
