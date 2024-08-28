@@ -19,7 +19,7 @@ jobs:
       Project_Path_Schema: Corcentric.Integrations.Process.Maps                                                              # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
       Project_Path_Maps: Corcentric.Integrations.Process.Maps                                                                # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.   
       
-      Wap_Project_Directory: Biztalk.Integrations.Process.sln                                                                # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+      Wap_Project_Directory: Biztalk.Integrations.Process                                                                    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
       
       Wap_Project_Path_Schema: Corcentric.Integrations.Process/Corcentric.Integrations.Schemas.btproj                        # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
       Wap_Project_Path_Maps: Corcentric.Integrations.Process/Corcentric.Integrations.Process.Map.btproj                      # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
@@ -28,6 +28,7 @@ jobs:
      
       
       ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+      
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -45,7 +46,7 @@ jobs:
     - name: Create the app package
       #run: Build-BizTalkMsi -Application $application -Project $projectName
       #run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle 
-      #run: msbuild $env:Wap_Project_Path /p:Configuration=Release /p:UapAppxPackageBuildMode=C:\ShashankWork\CICDDemo\Pakage /p:OutDir=C:\ShashankWork\CICDDemo
+      run: msbuild $env:Wap_Project_Path_Schema /p:Configuration=Release /p:UapAppxPackageBuildMode=C:\ShashankWork\CICDDemo\Pakage /p:OutDir=C:\ShashankWork\CICDDemo
 
 
 
