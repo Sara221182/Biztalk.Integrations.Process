@@ -6,18 +6,28 @@ namespace Corcentric.Integrations.Process.Maps {
     public sealed class DemoMap : global::Microsoft.XLANGs.BaseTypes.TransformBase {
         
         private const string _strMap = @"<?xml version=""1.0"" encoding=""UTF-16""?>
-<xsl:stylesheet xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"" xmlns:msxsl=""urn:schemas-microsoft-com:xslt"" xmlns:var=""http://schemas.microsoft.com/BizTalk/2003/var"" exclude-result-prefixes=""msxsl var s0"" version=""1.0"" xmlns:s0=""http://BizTalk_Server_Project1.DemoInput"" xmlns:ns0=""http://BizTalk_Server_Project1.DemoOutput"">
+<xsl:stylesheet xmlns:xsl=""http://www.w3.org/1999/XSL/Transform"" xmlns:msxsl=""urn:schemas-microsoft-com:xslt"" xmlns:var=""http://schemas.microsoft.com/BizTalk/2003/var"" exclude-result-prefixes=""msxsl var s0 userCSharp"" version=""1.0"" xmlns:s0=""http://BizTalk_Server_Project1.DemoInput"" xmlns:ns0=""http://BizTalk_Server_Project1.DemoOutput"" xmlns:userCSharp=""http://schemas.microsoft.com/BizTalk/2003/userCSharp"">
   <xsl:output omit-xml-declaration=""yes"" method=""xml"" version=""1.0"" />
   <xsl:template match=""/"">
     <xsl:apply-templates select=""/s0:Root"" />
   </xsl:template>
   <xsl:template match=""/s0:Root"">
+    <xsl:variable name=""var:v1"" select=""userCSharp:StringConcat(string(Field/text()))"" />
     <ns0:Root>
       <Field>
-        <xsl:value-of select=""Field/text()"" />
+        <xsl:value-of select=""$var:v1"" />
       </Field>
     </ns0:Root>
   </xsl:template>
+  <msxsl:script language=""C#"" implements-prefix=""userCSharp""><![CDATA[
+public string StringConcat(string param0)
+{
+   return param0;
+}
+
+
+
+]]></msxsl:script>
 </xsl:stylesheet>";
         
         private const string _strArgList = @"<ExtensionObjects />";

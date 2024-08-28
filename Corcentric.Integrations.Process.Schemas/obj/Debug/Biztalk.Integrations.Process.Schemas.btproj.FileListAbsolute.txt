@@ -2,7 +2,7 @@ C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\BizTalk Server Project1\
 C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\BizTalk Server Project1\bin\Debug\BizTalk Server Project1.pdb
 C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\BizTalk Server Project1\obj\Debug\BizTalk Server Project1.dll
 C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\BizTalk Server Project1\obj\Debug\BizTalk Server Project1.pdb
-C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Schemas\bin\Debug\BizTalk Server Project1.dll
-C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Schemas\bin\Debug\BizTalk Server Project1.pdb
-C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Schemas\obj\Debug\BizTalk Server Project1.dll
-C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Schemas\obj\Debug\BizTalk Server Project1.pdb
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Schemas\bin\Debug\Biztalk.Integrations.Process.Schemas.dll
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Schemas\bin\Debug\Biztalk.Integrations.Process.Schemas.pdb
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Schemas\obj\Debug\Biztalk.Integrations.Process.Schemas.dll
+C:\ShashankWork\TestMSI\Corcentric.Integrations.Process\Corcentric.Integrations.Process.Schemas\obj\Debug\Biztalk.Integrations.Process.Schemas.pdb

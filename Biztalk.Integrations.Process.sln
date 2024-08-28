@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corcentric.Integrations.Process.Maps", "Corcentric.Integrations.Process.Maps\Corcentric.Integrations.Process.Maps.btproj", "{87BA32F2-7348-456B-B8FD-57CAF46FADB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biztalk.Integrations.Process.Maps", "Corcentric.Integrations.Process.Maps\Biztalk.Integrations.Process.Maps.btproj", "{87BA32F2-7348-456B-B8FD-57CAF46FADB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biztalk.Integrations.Process.Schemas", "Corcentric.Integrations.Process.Schemas\Biztalk.Integrations.Process.Schemas.btproj", "{BCF06F57-3245-4A2F-90B2-24E0CC461D41}"
 EndProject
