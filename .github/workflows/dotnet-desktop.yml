@@ -34,7 +34,7 @@ jobs:
       run: msbuild $env:Wap_Project_Path /p:Configuration=Release /p:OutDir=C:\ShashankWork\CICDDemo
  
     - name: Run a one-line script
-      run: powershell C:\ShashankWork\CICDDemo\PowerShell\BizTalkDeploy.ps1
+      run: powershell C:\Temp\BizTalkDeploy.ps1
 
       
       
