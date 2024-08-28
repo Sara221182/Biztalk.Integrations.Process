@@ -7,11 +7,11 @@ using Microsoft.BizTalk.XLANGs.BTXEngine;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BizTalk Server Project1")]
+[assembly: AssemblyTitle("Corcentric.Integrations.Process.Schemas")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BizTalk Server Project1")]
+[assembly: AssemblyProduct("Corcentric.Integrations.Process.Schemas")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
